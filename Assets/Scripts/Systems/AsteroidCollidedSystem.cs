@@ -21,7 +21,7 @@ namespace Client {
 
                 asteroid.Boom();
 
-                _filterAsteroid.GetEntity(index).Get<InPool>();
+                _filterAsteroid.GetEntity(index).Get<Exploded>();
                 _filterAsteroid.GetEntity(index).Del<Collided>();
 
                 lvl.AsteroidsDestroyed++;

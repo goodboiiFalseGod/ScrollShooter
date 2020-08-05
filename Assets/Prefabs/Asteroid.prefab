@@ -114,6 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 7711980966659197471}
+  trail: {fileID: 4412743386637495335}
 --- !u!1 &4412743386637495335
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,7 +226,7 @@ PrefabInstance:
     - target: {fileID: 1923370570758522506, guid: 14139b6c1ee8ebc4ea10eff865880f32,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 1923370570758522506, guid: 14139b6c1ee8ebc4ea10eff865880f32,
         type: 3}

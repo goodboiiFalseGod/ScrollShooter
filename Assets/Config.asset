@@ -16,7 +16,7 @@ MonoBehaviour:
   BulletSpeed: 3
   GameSpeed: 1
   ShootCooldown: 1
-  IsBothGunsShooting: 0
+  IsBothGunsShooting: 1
   Xsens: 1
   Ysens: 1.2
   MaxControlPower: 5

@@ -9,7 +9,7 @@ namespace Client {
 
         EcsFilter<PlayerTag, TransformRef> _playerFilter;
         EcsFilter<BulletTag, TransformRef>.Exclude<InPool> _bulletFilter;
-        EcsFilter<EnemyTag, TransformRef>.Exclude<InPool> _asteroidFilter;
+        EcsFilter<EnemyTag, TransformRef>.Exclude<InPool, Exploded> _asteroidFilter;
 
         void IEcsRunSystem.Run () {
             // add your run code here.
