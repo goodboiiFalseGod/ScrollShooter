@@ -1,5 +1,6 @@
 ﻿using Client;
 using Leopotam.Ecs;
+using LeopotamGroup.Globals;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -38,8 +39,11 @@ namespace Assets.UnityComponents
         protected abstract void CreateEntity();
 
         protected virtual void OnDestroy()
-        {
-            entity.Destroy();
+        {   
+            if(Service<EcsWorld>.Get().IsAlive())
+            {
+                entity.Destroy();
+            }
         }
 
         public virtual void MoveToPool()
@@ -49,7 +53,7 @@ namespace Assets.UnityComponents
         }
 
         public virtual void MoveFromPool()
-        {
+        {   
             this.gameObject.SetActive(true);
             entity.Del<InPool>();
         }

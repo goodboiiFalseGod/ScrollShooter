@@ -10,7 +10,6 @@ using UnityEngine;
 public class Asteroid : GameEntity
 {
     public GameObject explosion;
-    public GameObject trail;
 
     protected override void Start()
     {
@@ -31,6 +30,8 @@ public class Asteroid : GameEntity
 
         ref Direction enemyDirectionComponent = ref entity.Get<Direction>();
         enemyDirectionComponent.value = new Vector3(Random.Range(-2f, 2f) / 10f, -1, -1);
+        Vector3 dir = new Vector3(enemyDirectionComponent.value.x, enemyDirectionComponent.value.y, 0);
+        //transform.up = -dir;
 
         Vector3 angle = transform.up - enemyDirectionComponent.value;
         //transform.rotation = new Quaternion(angle.x * 10f, angle.y * 10f, 0, 0);
@@ -57,9 +58,7 @@ public class Asteroid : GameEntity
     public void Boom()
     {
         explosion.SetActive(true);
-        trail.SetActive(false);
 
-        StartCoroutine(CallDelayedAction(() => trail.SetActive(true), 1f));
         StartCoroutine(CallDelayedAction(() => explosion.SetActive(false), 1f));
         StartCoroutine(CallDelayedAction(MoveToPool, 1f));
         entity.Del<Exploded>();
