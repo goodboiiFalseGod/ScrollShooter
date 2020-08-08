@@ -36,6 +36,8 @@ public class Asteroid : GameEntity
         Vector3 angle = transform.up - enemyDirectionComponent.value;
         //transform.rotation = new Quaternion(angle.x * 10f, angle.y * 10f, 0, 0);
 
+        entity.Get<ColliderRadius>().value = this.GetComponent<CircleCollider2D>().radius;
+
         entity.Get<EnemyTag>();
 
         MoveToPool();
@@ -59,8 +61,8 @@ public class Asteroid : GameEntity
     {
         explosion.SetActive(true);
 
+        StartCoroutine(CallDelayedAction(() => entity.Del<Exploded>(), 1f));
         StartCoroutine(CallDelayedAction(() => explosion.SetActive(false), 1f));
         StartCoroutine(CallDelayedAction(MoveToPool, 1f));
-        entity.Del<Exploded>();
     }
 }

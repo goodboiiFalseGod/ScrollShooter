@@ -31,7 +31,7 @@ namespace Client {
                     ref TransformRef transformRef = ref asteroidEntity.Get<TransformRef>();
                     transformRef.value.position = spawnPos;
 
-                    cooldownComponent.value = config.GameSpeed;
+                    cooldownComponent.value = config.AsteroidCooldown;
                 }
             }
         }

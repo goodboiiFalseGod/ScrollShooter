@@ -9,6 +9,7 @@ public class Config : ScriptableObject
     public float BulletSpeed = 3;
     public float GameSpeed = 1;
     public float ShootCooldown = 1;
+    public float AsteroidCooldown = 0.5f;
     public bool IsBothGunsShooting = false;
 
     public float Xsens = 1;

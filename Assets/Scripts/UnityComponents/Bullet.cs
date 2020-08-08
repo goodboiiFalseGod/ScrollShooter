@@ -20,6 +20,9 @@ public class Bullet : GameEntity
         entity.Get<GameEntityRef>().value = this;
         entity.Get<BulletTag>();
 
+        entity.Get<ColliderRadius>().value = this.GetComponent<CircleCollider2D>().radius;
+        
+
         MoveToPool();
     }
 

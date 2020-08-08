@@ -16,7 +16,9 @@ MonoBehaviour:
   AsteroidsDestroyed: 0
   TimeSurvived: 0
   DistanceComplete: 0
-  AsteroidsGoal: 10
+  AsteroidsGoal: 40
   TimeGoal: 0
   DistanceGoal: 0
-  LevelState: 0
+  MaxHealth: 3
+  CurrentHealth: 3
+  LevelState: 1

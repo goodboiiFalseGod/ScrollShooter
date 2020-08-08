@@ -41,6 +41,7 @@ public class Player : GameEntity
         entity.Get<Cooldown>().value = 0;
         entity.Get<GameEntityRef>().value = this;
         entity.Get<TransformRef>().value = this.transform;
+        entity.Get<ColliderRadius>().value = this.GetComponent<CircleCollider2D>().radius;
 
         entity.Get<Controllable>();
         entity.Get<PlayerTag>();
