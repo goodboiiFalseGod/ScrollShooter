@@ -16,6 +16,7 @@ MonoBehaviour:
   BulletSpeed: 3
   GameSpeed: 1
   ShootCooldown: 1
+  AsteroidCooldown: 0.5
   IsBothGunsShooting: 1
   Xsens: 1
   Ysens: 1.2
