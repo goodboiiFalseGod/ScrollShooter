@@ -3,18 +3,19 @@
     "com.leopotam.ecs": "https://github.com/Leopotam/ecs.git",
     "com.leopotam.ecs-unityintegration": "https://github.com/Leopotam/ecs-unityintegration.git",
     "com.leopotam.globals": "https://github.com/Leopotam/globals.git",
-    "com.unity.2d.animation": "3.2.2",
-    "com.unity.2d.pixel-perfect": "2.0.4",
-    "com.unity.2d.psdimporter": "2.1.4",
+    "com.unity.2d.animation": "5.2.0",
+    "com.unity.2d.pixel-perfect": "4.0.1",
+    "com.unity.2d.psdimporter": "4.3.0",
     "com.unity.2d.sprite": "1.0.0",
-    "com.unity.2d.spriteshape": "3.0.11",
+    "com.unity.2d.spriteshape": "5.3.0",
     "com.unity.2d.tilemap": "1.0.0",
-    "com.unity.collab-proxy": "1.2.16",
-    "com.unity.ide.rider": "1.1.4",
-    "com.unity.ide.vscode": "1.2.0",
-    "com.unity.test-framework": "1.1.14",
-    "com.unity.textmeshpro": "2.0.1",
-    "com.unity.timeline": "1.2.14",
+    "com.unity.collab-proxy": "1.15.17",
+    "com.unity.ide.rider": "2.0.7",
+    "com.unity.ide.visualstudio": "2.0.15",
+    "com.unity.ide.vscode": "1.2.5",
+    "com.unity.test-framework": "1.1.31",
+    "com.unity.textmeshpro": "3.0.6",
+    "com.unity.timeline": "1.4.8",
     "com.unity.ugui": "1.0.0",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
@@ -47,19 +48,5 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  },
-  "lock": {
-    "com.leopotam.ecs": {
-      "revision": "HEAD",
-      "hash": "0e69d61cf659e5635b46b3f8d4531e619a85c497"
-    },
-    "com.leopotam.ecs-unityintegration": {
-      "revision": "HEAD",
-      "hash": "a3ab84f4e28443f8ba66231cb697598277459b8d"
-    },
-    "com.leopotam.globals": {
-      "revision": "HEAD",
-      "hash": "740d6ddbd9ed39947f2153c63bc2654d04e5b8c8"
-    }
   }
 }

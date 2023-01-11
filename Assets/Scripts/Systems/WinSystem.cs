@@ -11,8 +11,7 @@ namespace Client {
         LevelSettings lvl; 
 
         void IEcsRunSystem.Run () {
-            // add your run code here.
-            Debug.Log(lvl.AsteroidsDestroyed.ToString() + "     " + lvl.DistanceComplete.ToString() + "     " + lvl.TimeSurvived.ToString());
+            // add your run code here
 
             if (lvl.AsteroidsDestroyed >= lvl.AsteroidsGoal && lvl.DistanceComplete >= lvl.DistanceGoal && lvl.TimeSurvived >= lvl.TimeGoal)
             {
